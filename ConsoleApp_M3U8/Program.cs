@@ -80,6 +80,7 @@ namespace ConsoleApp_M3U8
             info.Path = Environment.CurrentDirectory + "\\";
             File.WriteAllText(info.Path + "0m3u8.m3u8", info.m3u8);
             //down = new Down(info);
+            Console.WriteLine("path={0}\n", info.Path);
             return false;
         }
 
