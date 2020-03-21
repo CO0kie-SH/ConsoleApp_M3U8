@@ -52,6 +52,7 @@ namespace ConsoleApp_M3U8
                 {
                     Console.WriteLine("WebClent发生错误：{0}\n{1}",
                         ex.Message, url);
+                    return false;
                 }
             }
             if (!body.Contains("#EXT-X-ENDLIST"))
